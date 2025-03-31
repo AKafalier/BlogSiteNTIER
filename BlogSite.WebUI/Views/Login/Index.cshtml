@@ -1,0 +1,10 @@
+<h2>Admin Giriş</h2>
+<form method="post">
+    <input name="username" placeholder="Kullanıcı Adı" class="form-control mb-2" />
+    <input name="password" type="password" placeholder="Şifre" class="form-control mb-2" />
+    <button type="submit" class="btn btn-primary">Giriş Yap</button>
+</form>
+@if (ViewBag.Error != null)
+{
+    <div class="text-danger mt-2">@ViewBag.Error</div>
+}

@@ -1,0 +1,8 @@
+@model BlogSite.Entities.Post
+<h2>Yazıyı Düzenle</h2>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input asp-for="Title" class="form-control mb-2" />
+    <textarea asp-for="Content" class="form-control mb-2" rows="5"></textarea>
+    <button type="submit" class="btn btn-success">Güncelle</button>
+</form>

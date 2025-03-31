@@ -1,0 +1,7 @@
+@model List<BlogSite.Entities.CvItem>
+<h1>Hakkımda</h1>
+@foreach (var item in Model)
+{
+    <h4>@item.Title</h4>
+    <p>@item.Content</p>
+}

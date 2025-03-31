@@ -1,0 +1,7 @@
+@model BlogSite.Entities.Post
+<h2>Yeni Yazı</h2>
+<form method="post">
+    <input asp-for="Title" class="form-control mb-2" placeholder="Başlık" />
+    <textarea asp-for="Content" class="form-control mb-2" rows="5"></textarea>
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

@@ -1,0 +1,10 @@
+@model List<BlogSite.Entities.Post>
+<h1>Yazılar</h1>
+@foreach (var post in Model)
+{
+    <div class="mb-4">
+        <h3>@post.Title</h3>
+        <p>@(post.Content.Length > 200 ? post.Content.Substring(0, 200) + "..." : post.Content)</p>
+        <a href="/Home/Post/@post.Id">Devamını Oku</a>
+    </div>
+}

@@ -1,0 +1,9 @@
+@model BlogSite.Entities.CvItem
+<h2>CV Girdisi Düzenle</h2>
+<form method="post">
+    <input type="hidden" asp-for="Id" />
+    <input asp-for="Title" class="form-control mb-2" />
+    <textarea asp-for="Content" class="form-control mb-2" rows="4"></textarea>
+    <input asp-for="Order" class="form-control mb-2" type="number" />
+    <button type="submit" class="btn btn-success">Güncelle</button>
+</form>

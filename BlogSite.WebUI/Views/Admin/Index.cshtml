@@ -1,0 +1,16 @@
+@model List<BlogSite.Entities.Post>
+<h2>Blog Yazıları</h2>
+<a href="/Admin/AddPost" class="btn btn-success mb-2">+ Yeni Yazı</a>
+<table class="table table-bordered">
+    <tr><th>Başlık</th><th>İşlem</th></tr>
+    @foreach (var post in Model)
+    {
+        <tr>
+            <td>@post.Title</td>
+            <td>
+                <a href="/Admin/EditPost/@post.Id" class="btn btn-sm btn-warning">Düzenle</a>
+                <a href="/Admin/DeletePost/@post.Id" class="btn btn-sm btn-danger">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
