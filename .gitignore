@@ -3,3 +3,5 @@ obj/
 *.db
 .vscode/
 /.gitignore
+/.vs/BlogSite/FileContentIndex
+/.vs
